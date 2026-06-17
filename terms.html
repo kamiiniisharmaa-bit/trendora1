@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Trendora – Terms & Conditions</title>
+  <!-- Google Fonts + minimal reset -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafc;
+      color: #1e1e2f;
+      line-height: 1.5;
+    }
+
+    /* container */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* header / nav (consistent with homepage) */
+    .top-bar {
+      background: white;
+      border-bottom: 1px solid #eaeaef;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(2px);
+      background: rgba(255,255,255,0.96);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 18px 0;
+    }
+
+    .logo h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #1e1e2f, #3b2e5e);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      cursor: default;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2c2c38;
+      transition: 0.2s;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: #7b4b9e;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-icons span {
+      font-size: 1.4rem;
+      cursor: default;
+    }
+
+    /* terms main content */
+    .terms-hero {
+      background: linear-gradient(110deg, #f1edf9 0%, #eae3f7 100%);
+      padding: 56px 0 48px;
+      margin-bottom: 30px;
+      border-radius: 0 0 48px 48px;
+    }
+
+    .terms-hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #1b1428, #4a2c6d);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 12px;
+    }
+
+    .terms-hero p {
+      font-size: 1.1rem;
+      color: #2e2a3e;
+      max-width: 700px;
+    }
+
+    .last-updated {
+      display: inline-block;
+      background: #ffffffcc;
+      backdrop-filter: blur(2px);
+      padding: 4px 16px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-top: 16px;
+    }
+
+    .terms-content {
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.02);
+      padding: 48px 48px;
+      margin: 32px 0 64px;
+      border: 1px solid #f0ebf8;
+    }
+
+    .terms-section {
+      margin-bottom: 40px;
+    }
+
+    .terms-section h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #1f1a2e;
+      letter-spacing: -0.3px;
+      border-left: 5px solid #7b4b9e;
+      padding-left: 18px;
+    }
+
+    .terms-section h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 24px 0 12px 0;
+      color: #2c2542;
+    }
+
+    .terms-section p {
+      margin-bottom: 16px;
+      color: #2e2a3f;
+      font-size: 1rem;
+    }
+
+    .terms-section ul, .terms-section ol {
+      margin: 16px 0 20px 32px;
+      color: #2e2a3f;
+    }
+
+    .terms-section li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: #f5f2fc;
+      padding: 24px 28px;
+      border-radius: 28px;
+      margin: 28px 0;
+      border-left: 6px solid #7b4b9e;
+    }
+
+    hr {
+      margin: 40px 0;
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, #e0d9f0, transparent);
+    }
+
+    /* back to shop button */
+    .back-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1.5px solid #cfc5e6;
+      padding: 12px 28px;
+      border-radius: 60px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #2c2542;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-secondary:hover {
+      background: #f2edfe;
+      border-color: #7b4b9e;
+    }
+
+    /* footer (similar to homepage) */
+    footer {
+      background: #0f0e17;
+      color: #cfcbe6;
+      padding: 48px 0 24px;
+      border-radius: 32px 32px 0 0;
+      margin-top: 20px;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h4 {
+      color: white;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-col p, .footer-col a {
+      color: #b9b3d4;
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid #2e2a44;
+      padding-top: 28px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .terms-content {
+        padding: 28px 20px;
+      }
+      .terms-hero h1 {
+        font-size: 2rem;
+      }
+      .terms-section h2 {
+        font-size: 1.4rem;
+      }
+      .container {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <h1>TRENDORA</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+      </div>
+      <div class="header-icons">
+        <span>🔍</span>
+        <span>🛒</span>
+        <span>👤</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="terms-hero">
+    <div class="container">
+      <h1>Terms & Conditions</h1>
+      <p>Welcome to Trendora. These terms govern your use of our website and services — transparency is our style.</p>
+      <div class="last-updated">📅 Last updated: June 12, 2026</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="terms-content">
+      <div class="terms-section">
+        <h2>1. Introduction & Agreement</h2>
+        <p>By accessing or using the Trendora website (“trendora.com”, “we”, “us”, “our”), you agree to comply with and be bound by these Terms & Conditions. If you do not agree with any part of these terms, please do not use our services. Trendora provides an online marketplace for fashion, accessories, and lifestyle products. These terms apply to all visitors, users, and customers.</p>
+        <p>We reserve the right to update or modify these terms at any time without prior notice. Your continued use of the site after any changes indicates your acceptance of the new terms.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>2. Use of Our Website</h2>
+        <p>You agree to use the Trendora website only for lawful purposes and in a manner that does not infringe the rights of, restrict, or inhibit anyone else's use of the site. Prohibited behavior includes:</p>
+        <ul>
+          <li>Unauthorized reproduction, distribution, or modification of any content.</li>
+          <li>Attempting to interfere with the security or functionality of the website.</li>
+          <li>Using automated systems (bots, scrapers) to collect data without permission.</li>
+          <li>Violating any applicable local, state, national, or international law.</li>
+        </ul>
+        <p>Trendora reserves the right to suspend or terminate access to any user violating these guidelines.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>3. Products & Pricing</h2>
+        <p>We strive to display accurate product descriptions, colors, and pricing. However, we do not warrant that product descriptions, images, or other content on the site are completely error-free. Colors may appear slightly different depending on your screen settings.</p>
+        <div class="highlight-box">
+          <strong>💡 Price policy:</strong> All prices are listed in USD and are subject to change without notice. Trendora reserves the right to correct any pricing errors and cancel orders arising from such inaccuracies. Taxes, shipping fees, and promotional discounts will be applied at checkout.
+        </div>
+        <p>Limited edition and sale items are subject to availability. We reserve the right to limit quantities of any product or discontinue any item at any time.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>4. Orders & Payments</h2>
+        <p>When you place an order on Trendora, you receive an order confirmation via email. This confirmation does not guarantee acceptance — we may cancel any order due to stock limitations, payment verification issues, or suspected fraud.</p>
+        <p>We accept major credit cards, digital wallets, and other secure payment methods as indicated during checkout. You represent that you have the legal right to use any payment method you provide. All transactions are encrypted and processed via secure gateways; however, Trendora is not liable for third-party payment processor errors.</p>
+        <p><strong>Order modifications:</strong> Once placed, orders are immediately sent to our fulfillment team. If you need changes, contact us within 1 hour, but we cannot guarantee adjustments.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>5. Shipping & Delivery</h2>
+        <p>We offer worldwide shipping with estimated delivery times displayed at checkout. Please note that delivery dates are estimates, not guarantees. Trendora is not responsible for delays caused by customs, carriers, or external events (e.g., weather, strikes).</p>
+        <p>Risk of loss and title for products pass to you upon delivery to the carrier. Make sure to inspect packages upon arrival; if damaged, contact the carrier and our support team within 48 hours.</p>
+        <ul>
+          <li>Standard shipping: 5–9 business days</li>
+          <li>Express shipping: 2–4 business days</li>
+          <li>Free shipping on orders over $50 (domestic)</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h2>6. Returns & Refunds</h2>
+        <p>We want you to love your Trendora pieces. If you are not fully satisfied, you may return eligible items within 30 days of delivery. Returned products must be unused, unwashed, with original tags attached and in original packaging.</p>
+        <p>To initiate a return, visit our returns center. Refunds will be issued to the original payment method within 7–14 business days after we receive and inspect the returned item. Sale items marked "Final Sale" cannot be returned. Shipping charges are non-refundable unless the return is due to our error.</p>
+        <div class="highlight-box">
+          ⚡ <strong>Easy exchanges:</strong> For a different size or color, we recommend placing a new order and returning the original item — faster and more reliable.
+        </div>
+      </div>
+
+      <div class="terms-section">
+        <h2>7. Intellectual Property</h2>
+        <p>All content on this website — including but not limited to logos, images, text, graphics, product designs, UI elements, and the "Trendora" trademark — is the exclusive property of Trendora or its content suppliers and protected by international copyright and trademark laws.</p>
+        <p>You may not reproduce, distribute, or create derivative works without express written permission from Trendora. Unauthorized use may result in legal action.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>8. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Trendora shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including lost profits or data, arising from your use of or inability to use the site or any products purchased. Our total liability, whether in contract, warranty, or tort, shall not exceed the amount you paid for the product giving rise to the claim.</p>
+        <p>Some jurisdictions do not allow the exclusion of certain warranties, so some limitations may not apply to you.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>9. Privacy & Data Protection</h2>
+        <p>Your privacy is important. Our <a href="#" style="color:#7b4b9e;">Privacy Policy</a> explains how we collect, use, and safeguard your personal information. By using our website, you consent to our data practices described therein.</p>
+        <p>We use cookies to enhance your shopping experience — you can manage cookie preferences in your browser settings.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>10. Governing Law & Disputes</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the State of Delaware, without regard to conflict of law principles. Any dispute arising from these terms or your use of Trendora shall be resolved through binding arbitration or small claims court, as determined by Trendora. You agree to waive any right to participate in a class-action lawsuit.</p>
+      </div>
+
+      <div class="terms-section">
+        <h2>11. Contact Information</h2>
+        <p>If you have any questions about these Terms & Conditions, please contact our legal & support team:</p>
+        <p>📧 hello@trendora.com<br>📍 123 Style Avenue, Suite 400, New York, NY 10001<br>📞 +1 (800) 555-TRND</p>
+        <p>Our customer service hours are Monday–Friday, 9 AM – 6 PM EST.</p>
+      </div>
+
+      <hr>
+
+      <div class="back-link">
+        <a href="#" class="btn-secondary">← Back to Trendora Shop</a>
+      </div>
+      <p style="text-align: center; margin-top: 32px; font-size: 0.85rem; color: #6f6a84;">By continuing to use our services, you acknowledge that you have read, understood, and agreed to these Terms & Conditions.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>TRENDORA</h4>
+        <p>Redefining everyday style.<br> © 2026, modern essentials</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <p>New Arrivals<br>Best Sellers<br>Sale</p>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <p>FAQs<br>Shipping & Returns<br>Size Guide</p>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <p><a href="#" style="color:#cbc4df;">Terms & Conditions</a><br>Privacy Policy<br>Cookie Settings</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>✨ Trendora — Where trends begin. This is a demo terms page for illustrative purposes. All policies reflect genuine e-commerce best practices.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- simple interactive effect for the back link to maintain consistency -->
+<script>
+  // Make the back button simulate shop return (optional dynamic)
+  const backBtn = document.querySelector('.btn-secondary');
+  if(backBtn) {
+    backBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Just a playful notification in absence of actual homepage link redirection
+      alert('✨ Trendora: This would direct you to the homepage / shop. (Demo navigation)\nIn a real store you would be redirected to the main shop page.');
+      // Uncomment if you want actual redirect to homepage (relative)
+      // window.location.href = '/';
+    });
+  }
+
+  // Optional: Add any current year update dynamically
+  const yearSpan = document.querySelector('.copyright p');
+  if(yearSpan && yearSpan.innerText.includes('2026')) {
+    // just for authenticity, keep
+  }
+  // Simple hover on footer links
+  const footerLinks = document.querySelectorAll('.footer-col a');
+  footerLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      link.style.color = '#ffffff';
+    });
+    link.addEventListener('mouseleave', () => {
+      link.style.color = '#b9b3d4';
+    });
+  });
+</script>
+</body>
+</html>

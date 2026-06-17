@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Trendora – Privacy Policy</title>
+  <!-- Google Fonts + minimal reset -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafc;
+      color: #1e1e2f;
+      line-height: 1.5;
+    }
+
+    /* container */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* header / nav (consistent with brand) */
+    .top-bar {
+      background: white;
+      border-bottom: 1px solid #eaeaef;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(2px);
+      background: rgba(255,255,255,0.96);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 18px 0;
+    }
+
+    .logo h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #1e1e2f, #3b2e5e);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      cursor: default;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2c2c38;
+      transition: 0.2s;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: #7b4b9e;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-icons span {
+      font-size: 1.4rem;
+      cursor: default;
+    }
+
+    /* privacy hero section */
+    .privacy-hero {
+      background: linear-gradient(110deg, #f1edf9 0%, #eae3f7 100%);
+      padding: 56px 0 48px;
+      margin-bottom: 30px;
+      border-radius: 0 0 48px 48px;
+    }
+
+    .privacy-hero h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #1b1428, #4a2c6d);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 12px;
+    }
+
+    .privacy-hero p {
+      font-size: 1.1rem;
+      color: #2e2a3e;
+      max-width: 700px;
+    }
+
+    .last-updated {
+      display: inline-block;
+      background: #ffffffcc;
+      backdrop-filter: blur(2px);
+      padding: 4px 16px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-top: 16px;
+    }
+
+    /* main content card */
+    .privacy-content {
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.02);
+      padding: 48px 48px;
+      margin: 32px 0 64px;
+      border: 1px solid #f0ebf8;
+    }
+
+    .privacy-section {
+      margin-bottom: 40px;
+    }
+
+    .privacy-section h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #1f1a2e;
+      letter-spacing: -0.3px;
+      border-left: 5px solid #7b4b9e;
+      padding-left: 18px;
+    }
+
+    .privacy-section h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 24px 0 12px 0;
+      color: #2c2542;
+    }
+
+    .privacy-section p {
+      margin-bottom: 16px;
+      color: #2e2a3f;
+      font-size: 1rem;
+    }
+
+    .privacy-section ul, .privacy-section ol {
+      margin: 16px 0 20px 32px;
+      color: #2e2a3f;
+    }
+
+    .privacy-section li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: #f5f2fc;
+      padding: 24px 28px;
+      border-radius: 28px;
+      margin: 28px 0;
+      border-left: 6px solid #7b4b9e;
+    }
+
+    .data-table {
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+
+    .data-table table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .data-table th, .data-table td {
+      border: 1px solid #e9e3f2;
+      padding: 14px 16px;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .data-table th {
+      background: #f6f2fe;
+      font-weight: 700;
+      color: #2c2542;
+    }
+
+    hr {
+      margin: 40px 0;
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, #e0d9f0, transparent);
+    }
+
+    .back-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1.5px solid #cfc5e6;
+      padding: 12px 28px;
+      border-radius: 60px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #2c2542;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-secondary:hover {
+      background: #f2edfe;
+      border-color: #7b4b9e;
+    }
+
+    /* footer */
+    footer {
+      background: #0f0e17;
+      color: #cfcbe6;
+      padding: 48px 0 24px;
+      border-radius: 32px 32px 0 0;
+      margin-top: 20px;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h4 {
+      color: white;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-col p, .footer-col a {
+      color: #b9b3d4;
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid #2e2a44;
+      padding-top: 28px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .privacy-content {
+        padding: 28px 20px;
+      }
+      .privacy-hero h1 {
+        font-size: 2rem;
+      }
+      .privacy-section h2 {
+        font-size: 1.4rem;
+      }
+      .container {
+        padding: 0 20px;
+      }
+      .data-table th, .data-table td {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <h1>TRENDORA</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+      </div>
+      <div class="header-icons">
+        <span>🔍</span>
+        <span>🛒</span>
+        <span>👤</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="privacy-hero">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p>Your trust is our top priority. Learn how Trendora collects, uses, and protects your personal information — because your style is personal, and so is your data.</p>
+      <div class="last-updated">🔒 Last updated: June 12, 2026</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="privacy-content">
+      <div class="privacy-section">
+        <h2>1. Our Commitment to Privacy</h2>
+        <p>At Trendora (“we,” “us,” “our”), we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <strong>trendora.com</strong> (the “Site”), make a purchase, or interact with our services. Please read this policy carefully. By using our Site, you consent to the practices described herein.</p>
+        <p>We comply with applicable data protection laws, including the GDPR (for EU users) and CCPA (for California residents). If you have any questions, please contact our Data Protection Officer at <strong>privacy@trendora.com</strong>.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>2. Information We Collect</h2>
+        <p>We collect information that you voluntarily provide to us when you register, place an order, subscribe to our newsletter, or interact with our customer support. We may also automatically collect certain technical data.</p>
+        
+        <div class="data-table">
+          <table>
+            <thead>
+              <tr><th>Category</th><th>Examples</th><th>Legal Basis (where applicable)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Identity Data</td><td>Full name, username, date of birth</td><td>Contract performance, consent</td></tr>
+              <tr><td>Contact Data</td><td>Email address, shipping/billing address, phone number</td><td>Contract performance, legitimate interest</td></tr>
+              <tr><td>Financial Data</td><td>Payment card details, PayPal info (processed via secure gateway)</td><td>Contract performance</td></tr>
+              <tr><td>Transaction Data</td><td>Products purchased, order history, returns</td><td>Contract performance, legal obligation</td></tr>
+              <tr><td>Technical Data</td><td>IP address, browser type, device identifiers, cookies</td><td>Legitimate interest (site security & analytics)</td></tr>
+              <tr><td>Profile Data</td><td>Preferences, wishlist items, feedback, survey responses</td><td>Consent, legitimate interest</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>We do not collect sensitive personal data (e.g., racial origin, political opinions, health information) unless required by law.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>3. How We Use Your Information</h2>
+        <p>Trendora uses your information for the following purposes:</p>
+        <ul>
+          <li><strong>Order processing & fulfillment:</strong> To process payments, ship products, and provide order updates.</li>
+          <li><strong>Account management:</strong> To maintain your account, wishlist, and purchase history.</li>
+          <li><strong>Marketing & personalization:</strong> To send you curated offers, style inspiration, and newsletters (you can opt out anytime).</li>
+          <li><strong>Customer support:</strong> To respond to inquiries, returns, and disputes.</li>
+          <li><strong>Site improvement & analytics:</strong> To analyze usage trends, fix bugs, and enhance your shopping experience.</li>
+          <li><strong>Security & fraud prevention:</strong> To detect and prevent fraudulent transactions and protect our community.</li>
+          <li><strong>Legal compliance:</strong> To comply with tax, anti-money laundering, or other legal obligations.</li>
+        </ul>
+        <div class="highlight-box">
+          ✨ <strong>Your choices matter:</strong> You can unsubscribe from marketing emails at any time by clicking the “unsubscribe” link in our emails or updating your account preferences. We will never sell your personal data to third parties.
+        </div>
+      </div>
+
+      <div class="privacy-section">
+        <h2>4. Cookies & Tracking Technologies</h2>
+        <p>We use cookies, web beacons, and similar technologies to enhance your browsing experience, analyze site traffic, and personalize content. Cookies are small text files stored on your device.</p>
+        <p><strong>Types of cookies we use:</strong></p>
+        <ul>
+          <li><strong>Essential cookies:</strong> Necessary for site functionality (shopping cart, login).</li>
+          <li><strong>Analytical/performance cookies:</strong> Help us understand how visitors interact with our site (e.g., Google Analytics).</li>
+          <li><strong>Functional cookies:</strong> Remember your preferences (language, currency).</li>
+          <li><strong>Targeting/advertising cookies:</strong> Deliver relevant Trendora ads on other platforms.</li>
+        </ul>
+        <p>You can manage cookie preferences through your browser settings. However, disabling essential cookies may affect site performance. For more details, see our <a href="#" style="color:#7b4b9e;">Cookie Policy</a>.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>5. Sharing Your Information</h2>
+        <p>We do not sell or rent your personal data. However, we may share information with trusted third parties to operate our business:</p>
+        <ul>
+          <li><strong>Service providers:</strong> Shipping carriers (e.g., USPS, DHL), payment processors (Stripe, PayPal), IT hosting, email delivery services.</li>
+          <li><strong>Marketing partners:</strong> Platforms like Klaviyo or Google Ads to serve personalized ads (only with your consent where required).</li>
+          <li><strong>Legal & authorities:</strong> When required by law, court order, or to protect the rights and safety of Trendora, our customers, or the public.</li>
+          <li><strong>Business transfers:</strong> In the event of a merger, acquisition, or sale of assets, your data may be transferred (we will notify you).</li>
+        </ul>
+        <p>All third parties are contractually obligated to keep your data secure and use it only for specified services.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>6. Data Retention</h2>
+        <p>We retain your personal data only as long as necessary to fulfill the purposes outlined in this policy, including for legal, accounting, or reporting requirements. For example:</p>
+        <ul>
+          <li>Order information is kept for 7 years to comply with tax laws.</li>
+          <li>Account information is retained until you request deletion.</li>
+          <li>Marketing preferences are stored until you unsubscribe.</li>
+        </ul>
+        <p>After the retention period, your data will be securely anonymized or deleted.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>7. Your Privacy Rights</h2>
+        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+        <ul>
+          <li><strong>Access:</strong> Request a copy of the data we hold about you.</li>
+          <li><strong>Correction:</strong> Ask us to rectify inaccurate or incomplete information.</li>
+          <li><strong>Erasure (“Right to be forgotten”):</strong> Request deletion of your data, subject to legal obligations.</li>
+          <li><strong>Restriction:</strong> Limit how we process your data in certain situations.</li>
+          <li><strong>Portability:</strong> Receive your data in a structured, machine-readable format.</li>
+          <li><strong>Objection:</strong> Opt out of direct marketing or certain types of processing.</li>
+          <li><strong>Withdraw consent:</strong> Where processing is based on consent, you may withdraw it anytime.</li>
+        </ul>
+        <div class="highlight-box">
+          📧 To exercise your rights, email us at <strong>privacy@trendora.com</strong> or use our <strong>Privacy Request Form</strong> in your account dashboard. We will respond within 30 days. If you are an EU resident, you also have the right to lodge a complaint with your local Data Protection Authority.
+        </div>
+      </div>
+
+      <div class="privacy-section">
+        <h2>8. Security Measures</h2>
+        <p>We implement industry-standard security measures to protect your data, including SSL encryption, firewalls, access controls, and regular security audits. However, no method of transmission over the internet is 100% secure. While we strive to protect your information, we cannot guarantee absolute security. You are responsible for keeping your account password confidential.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>9. Children's Privacy</h2>
+        <p>Trendora does not knowingly collect personal data from children under the age of 16. If we learn that we have inadvertently collected such information, we will delete it promptly. Parents or guardians who believe their child has provided us with personal data should contact us.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>10. International Data Transfers</h2>
+        <p>We are based in the United States, but we may transfer your data to service providers in other countries (e.g., for cloud hosting). When we transfer data outside the EEA or UK, we ensure appropriate safeguards such as Standard Contractual Clauses (SCCs) are in place to protect your information.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>11. Third-Party Links</h2>
+        <p>Our Site may contain links to external websites (e.g., social media, brand partners). This Privacy Policy does not apply to those sites. We encourage you to read the privacy policies of any third-party sites you visit.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>12. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. The “Last updated” date at the top indicates when the policy was last revised. Material changes will be notified via email or a prominent notice on our Site. Your continued use of Trendora after any changes constitutes acceptance of the updated policy.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>13. Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data handling practices, please reach out to our Privacy Team:</p>
+        <p>
+          📧 <strong>privacy@trendora.com</strong><br>
+          📍 Trendora Legal Department, 123 Style Avenue, Suite 400, New York, NY 10001<br>
+          📞 +1 (800) 555-TRND (ext. 401)<br>
+          🕒 Monday–Friday, 9 AM – 6 PM EST
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="back-link">
+        <a href="#" class="btn-secondary">← Back to Trendora Shop</a>
+      </div>
+      <p style="text-align: center; margin-top: 32px; font-size: 0.85rem; color: #6f6a84;">By shopping with Trendora, you acknowledge that you have read and understood our Privacy Policy.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>TRENDORA</h4>
+        <p>Redefining everyday style.<br> © 2026, modern essentials</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <p>New Arrivals<br>Best Sellers<br>Sale</p>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <p>FAQs<br>Shipping & Returns<br>Size Guide</p>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <p><a href="#" style="color:#cbc4df;">Terms & Conditions</a><br><a href="#" style="color:#cbc4df;">Privacy Policy</a><br>Cookie Settings</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>🔒 Trendora — Your privacy is our priority. This policy reflects our commitment to transparency and data protection.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- simple back button simulation (demo) + interactive toast for cookie consent style -->
+<script>
+  // Back to shop button simulation
+  const backBtn = document.querySelector('.btn-secondary');
+  if(backBtn) {
+    backBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      alert('✨ Trendora: You would be redirected to the homepage / shop.\n(Interactive demo — thank you for reviewing our privacy policy!)');
+      // Uncomment for actual redirect:
+      // window.location.href = '/';
+    });
+  }
+
+  // Optional: polite cookie hint (only for demonstration)
+  if(!localStorage.getItem('trendora_privacy_notice')) {
+    const toastDiv = document.createElement('div');
+    toastDiv.innerText = '🍪 Trendora uses cookies to enhance your experience. By continuing, you agree to our Privacy Policy.';
+    toastDiv.style.position = 'fixed';
+    toastDiv.style.bottom = '20px';
+    toastDiv.style.left = '20px';
+    toastDiv.style.right = '20px';
+    toastDiv.style.maxWidth = '380px';
+    toastDiv.style.background = '#1e1e2f';
+    toastDiv.style.color = 'white';
+    toastDiv.style.padding = '12px 20px';
+    toastDiv.style.borderRadius = '40px';
+    toastDiv.style.fontSize = '0.8rem';
+    toastDiv.style.zIndex = '999';
+    toastDiv.style.boxShadow = '0 8px 20px rgba(0,0,0,0.2)';
+    toastDiv.style.backdropFilter = 'blur(8px)';
+    toastDiv.style.background = 'rgba(30,30,47,0.95)';
+    toastDiv.style.fontWeight = '500';
+    toastDiv.style.cursor = 'pointer';
+    toastDiv.onclick = () => {
+      toastDiv.remove();
+      localStorage.setItem('trendora_privacy_notice', 'accepted');
+    };
+    document.body.appendChild(toastDiv);
+    setTimeout(() => {
+      if(toastDiv && toastDiv.parentNode) toastDiv.remove();
+    }, 8000);
+  }
+
+  // Add subtle hover effects on footer legal links
+  const legalLinks = document.querySelectorAll('.footer-col a');
+  legalLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => link.style.color = '#ffffff');
+    link.addEventListener('mouseleave', () => link.style.color = '#b9b3d4');
+  });
+</script>
+</body>
+</html>
